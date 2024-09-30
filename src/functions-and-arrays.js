@@ -1,7 +1,23 @@
-// Iteration 1 | Find the Maximum
-function maxOfTwoNumbers() {}
+/* Iteration 1 | Find the Maximum: 
+    
+    Implement the function maxOfTwoNumbers that takes two numbers as arguments and returns the bigger number.
 
+*/
 
+function maxOfTwoNumbers(number1, number2) {
+
+    if(number1 > number2){
+
+        return number1;
+    }
+    else if (number2 > number1){
+
+        return number2;
+
+    }
+    else {return number1, number2;}
+
+}
 
 
 // Iteration 2 | Find the Longest Word
