@@ -85,9 +85,9 @@ function sumNumbers(arr) {
 
     for (let i = 0; i <arr.length; i++){ //Con el bucle FOR recorro el array y lo almaceno en una variable. Cada elemento (arr[i]) se sumará al anterior (+=).
 
-        let arrayNumbers = arr[i]; //En lugar de usar "arr[i]" lo almaceno en una variable.
+        let elementsArray = arr[i]; //En lugar de usar "arr[i]" lo almaceno en una variable.
 
-        sum += arrayNumbers;
+        sum += elementsArray;
 
     }
 
@@ -95,13 +95,48 @@ function sumNumbers(arr) {
 
 }
 
+sumNumbers(arr); 
 
-// Iteration 4 | Numbers Average
+/* Iteration 4 | Numbers Average
+
+    Calculating an average is a prevalent task. So let's practice it a bit.
+
+    The logic behind this:
+
+    Find the sum as we did in the first exercise (or how about reusing the function sumNumbers()?)
+    Divide that sum by the number of elements in the array.
+
+
+*/
 const numbers2 = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
+function averageNumbers(arr) {
+
+    let sum = 0; //Igual que en el ejercicio anterior, nos sirve para almacenar la suma.
+
+    let average = 0; //Aquí almacenamos la media. 
+
+    if (arr.length === 0){
+
+        return 0; 
+
+    }
 
 
+    for (let i = 0; i < arr.length; i++){ //Recorro el array.
+
+        let elementsArray = arr[i];
+
+        sum += elementsArray; //Sumo cada elemento del array y lo almaceno en la variable "sum". 
+        
+        average = sum / arr.length; //Actualizo la variable "average" dividiendo el contenido de "sum" entre el número de elementos del array (arr.length). Así sacamos la media aritmética. 
+    }
+
+    return average;
+
+}
+
+averageNumbers(arr); 
 
 
 // Iteration 5 | Find Elements
