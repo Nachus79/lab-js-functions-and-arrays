@@ -19,7 +19,7 @@ function maxOfTwoNumbers(number1, number2) {
 
 }
 
-maxOfTwoNumbers(number1, number2);
+
 
 /* Iteration 2 | Find the Longest Word:
 
@@ -95,7 +95,7 @@ function sumNumbers(arr) {
 
 }
 
-sumNumbers(arr); 
+
 
 /* Iteration 4 | Numbers Average
 
@@ -136,10 +136,34 @@ function averageNumbers(arr) {
 
 }
 
-averageNumbers(arr); 
+ 
 
 
-// Iteration 5 | Find Elements
+/* Iteration 5 | Find Elements: 
+
+    Let's create a simple array search.
+
+    Declare a function named doesWordExist that will take in an array of words as one argument and a word to search for as the other. Return true if the word exists in the array; otherwise, return false.
+
+    The function should return null if an empty array is passed as an argument.
+*/
+
 const words2 = ["machine", "subset", "trouble", "starting", "matter", "eating", "truth", "disobedience"];
 
-function doesWordExist() {}
+function doesWordExist(arr, word) {
+
+    if (arr.length === 0){
+
+        return null; 
+
+    }
+
+     if (arr.includes(word)){  //Al emplear el metodo include no hace falta usar un bucle FOR. 
+
+         return true; 
+    }
+    else { return false; }
+
+    
+
+}
