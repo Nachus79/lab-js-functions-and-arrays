@@ -75,17 +75,19 @@ const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 function sumNumbers(arr) {
 
-    let sum = 0; 
+    let sum = 0; //Creo una variable para almacenar la suma.
 
-    if (arr.length === 0){
-
+    if (arr.length === 0){  //Con if tengo un filtro para saber si el array está vacío (su "length" será igual a "0"). 
+   
         return 0; 
 
     }
 
-    for (let i = 0; i <arr.length; i++){
+    for (let i = 0; i <arr.length; i++){ //Con el bucle FOR recorro el array y lo almaceno en una variable. Cada elemento (arr[i]) se sumará al anterior (+=).
 
-        sum += arr[i];
+        let arrayNumbers = arr[i]; //En lugar de usar "arr[i]" lo almaceno en una variable.
+
+        sum += arrayNumbers;
 
     }
 
